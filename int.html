@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga Welcome Screen</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(180deg, #05052c, #0f497f);
+        }
+
+        .container {
+            text-align: center;
+            color: white;
+        }
+
+        .welcome {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-weight: bold;
+            font-family: 'Cursive';
+        }
+
+        .yoga-illustration {
+            position: relative;
+            width: 250px;
+            height: 350px;
+            margin: 0 auto;
+        }
+
+        .yoga-illustration img {
+            width: 100%;
+            border-radius: 20px;
+        }
+
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50px;
+            height: 50px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .play-button::before {
+            content: '';
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border-left: 18px solid #333;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            margin-top: 20px;
+            font-family: 'Serif';
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="welcome">Welcome!</div>
+
+        <div class="yoga-illustration">
+            <img src="path_to_your_image.jpg" alt="Yoga Illustration">
+            <div class="play-button"></div>
+        </div>
+
+        <div class="subtitle">Discover serenity in each breath</div>
+    </div>
+</body>
+</html>

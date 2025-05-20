@@ -1,0 +1,20 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Create a 2D array of zeros with the desired shape
+array = np.zeros((500, 500, 3), dtype=np.uint8)
+
+# Set the top half of the array to black
+array[:250, :, :] = [0, 0, 0]
+
+# Create a gradient for the bottom half of the array
+for i in range(250):
+  for j in range(500):
+    # Blue channel
+    array[250+i, j, 0] = int(255 * i / 250)
+    # Green channel
+    array[250+i, j, 1] = int(255 * (250 - i) / 250)
+
+# Display the array as an image
+plt.imshow(array)
+plt.show()

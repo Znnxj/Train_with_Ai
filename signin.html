@@ -1,0 +1,84 @@
+<html></html>
+<head>
+    <title>Create New Account</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(180deg, #000428, #004e92);
+            font-family: 'Roboto', sans-serif;
+        }
+        .container {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 40px;
+            border-radius: 20px;
+            width: 300px;
+        }
+        .container h1 {
+            font-family: 'Pacifico', cursive;
+            color: white;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .container h2 {
+            color: white;
+            font-size: 24px;
+            margin: 10px 0;
+        }
+        .container p {
+            color: white;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .container label {
+            display: block;
+            color: white;
+            font-size: 12px;
+            text-align: left;
+            margin: 10px 0 5px;
+        }
+        .container input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 10px;
+            background: #d3d3d3;
+            font-size: 16px;
+        }
+        .container button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            background: black;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>welcome!</h1>
+        <h2>Create new Account</h2>
+        <p>Already Registered? Log in here.</p>
+        <form>
+            <label for="name">NAME</label>
+            <input type="text" id="name" name="name" value="karthik">
+            <label for="email">EMAIL</label>
+            <input type="email" id="email" name="email" value="karthikvirodhula14@gmail.com">
+            <label for="password">PASSWORD</label>
+            <input type="password" id="password" name="password" value="*****">
+            <button type="submit">sign up</button>
+        </form>
+    </div>
+</body>
+</html>

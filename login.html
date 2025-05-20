@@ -1,0 +1,83 @@
+<html></html>
+<head>
+    <title>Login Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+        }
+        .container {
+            text-align: center;
+            color: white;
+            width: 300px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .container h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        .container h2 {
+            font-size: 32px;
+            margin: 10px 0;
+        }
+        .container p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .input-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .input-group label {
+            display: block;
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            border: 2px solid white;
+            border-radius: 10px;
+            font-size: 16px;
+            color: white;
+            text-decoration: none;
+            transition: background 0.3s, color 0.3s;
+        }
+        .btn:hover {
+            background: white;
+            color: #24243e;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>welcome</h1>
+        <h2>Login</h2>
+        <p>Sign in to continue.</p>
+        <div class="input-group">
+            <label for="name">NAME</label>
+            <input type="text" id="name" value="karthik">
+        </div>
+        <div class="input-group">
+            <label for="email">EMAIL</label>
+            <input type="email" id="email" value="karthikvirodhula14@gmail.com">
+        </div>
+        <a href="#" class="btn">LOGIN</a>
+    </div>
+</body>
+</html>
